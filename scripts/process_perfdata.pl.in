@@ -29,6 +29,7 @@ use strict;
 use POSIX;
 use Getopt::Long;
 use Time::HiRes qw(gettimeofday tv_interval);
+use IO::Socket;
 use vars qw ( $TEMPLATE %NAGIOS $t0 $t1 $rt $delayed_write $rrdfile @ds_create $count $line $name $ds_update $dstype %CTPL);
 
 my %conf = (
